@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "windows.h": "c",
+        "chip8.h": "c",
+        "xlocale": "c",
+        "cstdio": "c",
+        "stdio.h": "c",
+        "time.h": "c",
+        "ios": "c",
+        "sdl.h": "c",
+        "sdl_opengl.h": "c",
+        "gl.h": "c"
+    }
+}
