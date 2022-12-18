@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.0.0)
-project(Chip8Emu)
+cmake_minimum_required(VERSION 3.1)
+project(Chip8Emu VERSION 0.1.0)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup()
+find_package(SDL2 REQUIRED)
 
 add_executable(chip src/main.c)
-target_link_libraries(chip ${CONAN_LIBS})
+
+target_link_libraries(chip PRIVATE ${SDL2_LIBRARIES})
